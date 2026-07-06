@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #050714;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 16px 40px;
+  background: #0D1545;
+  border-bottom: 1px solid #00E5FF33;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00E5FF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar .logo span {
+  color: #FFD740;
+}
+
+.navbar a {
+  color: #CBD5F0;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  color: #00E5FF;
+}
+
+.btn-primary {
+  background: #00E5FF;
+  color: #050714;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary:hover {
+  background: #00BFFF;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #00E5FF;
+  border: 1px solid #00E5FF;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.card {
+  background: #0D1545;
+  border: 1px solid #223399;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.page-container {
+  min-height: 100vh;
+  background: #050714;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  background: #0D1545;
+  border: 1px solid #223399;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #00E5FF;
+}
+
+label {
+  font-size: 13px;
+  color: #CBD5F0;
+}
+
+.tag {
+  display: inline-block;
+  background: #1A2870;
+  border: 1px solid #00E5FF55;
+  color: #00E5FF;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 4px;
 }
